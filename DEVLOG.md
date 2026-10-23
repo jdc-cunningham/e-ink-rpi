@@ -40,6 +40,16 @@ Ugh it keeps losing connection, the CRON thing my concern is can it keep a clock
 
 Alright doing the work on the pi
 
+9:52 PM
+
+Ayeeee finally, had some problems with my install script I setup
+
+<img src="./devlog-images/demo-1.JPG"/>
+
+<img src="./devlog-images/demo-2.JPG"/>
+
+Cool, the flashing clock demo is insane with a refresh rate of like 5 seconds per frame, the full black flash is distracting
+
 ---
 
 ### 10/21/2026
