@@ -34,6 +34,12 @@ Specifically it'll countdown how many days I have till I move into my new apartm
 
 If I don't make that I'm f'd I won't die but my life will suck. Like if I don't get into that apartment it means something went wrong and I'm gonna be homeless.
 
+8:24 PM
+
+Ugh it keeps losing connection, the CRON thing my concern is can it keep a clock right without internet assuming it gets disconnected again
+
+Alright doing the work on the pi
+
 ---
 
 ### 10/21/2026
