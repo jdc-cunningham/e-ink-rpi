@@ -9,6 +9,11 @@ from PIL import Image,ImageDraw,ImageFont
 
 logging.basicConfig(level=logging.DEBUG)
 base_path = str(Path.cwd())
+
+# check exec path for CRON
+if base_path == "/home/pi":
+    base_path = "/home/pi/e-ink-rpi/code"
+
 picdir = base_path + "/e-Paper/pic"
 libdir = base_path + "/e-Paper/lib"
 
