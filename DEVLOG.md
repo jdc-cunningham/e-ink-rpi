@@ -1,3 +1,53 @@
+- [ ] get a CRON countdown running
+
+### 10/24/2026
+
+3:08 PM
+
+Alright it's the weekend, I'm broke af, locked into my home since I have no car
+
+Let's do something productive
+
+I want to keep it in the forefront of my mind how many days till I start my new life (really just a new apartment)
+
+But to get to that point is huge and exciting although I kinda wish I picked out a bigger apartment not an askew studio with no bedroom lmao but the savings...
+
+This should be simple the goal is to just display a text which is generated from a function that counts down how many days from Dec 1, 2026 there are.
+
+Then the CRON job will refresh it every hour since the info doesn't have to be refreshed that quickly.
+
+I'm waiting for this video to render that I just made it's 30 mins long.
+
+3:16 PM
+
+Just trying out these different demos
+
+The V2 and V4 demos seem to work the best
+
+I am struggling to motivate myself, I have this feeling of being bored and lonely maybe from not drinking idk, also literally being alone ha
+
+3:27 PM
+
+This is always the hard part when using a library like this, you have to get the path right to reference it in your own code that sits outside of the example folder
+
+Instead of cloing a bunch of random unused files, I'll manually pick out the ones specifically for this 2.13" display I'm using.
+
+3:37 PM
+
+Workout break
+
+4:06 PM
+
+Just put out that Vanta Wing video no workout yet
+
+4:32 PM
+
+I do feel more energized/happier after working out and it's a home workout so that's nice
+
+Alright I'm going to pick out the library files now for this specific display
+
+---
+
 ### 10/22/2026
 
 8:08 PM
