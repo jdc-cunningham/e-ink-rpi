@@ -78,6 +78,8 @@ I had envisioned using this to show like my total debt as a clock/daily reminder
 
 But this is it for now for this project, I'll just add an hourly schedule to run the update via crontab.
 
+Lol as I typed the above it lost connection again to the hotspot ugh.
+
 ---
 
 ### 10/22/2026
