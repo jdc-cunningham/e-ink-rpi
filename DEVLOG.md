@@ -80,6 +80,12 @@ But this is it for now for this project, I'll just add an hourly schedule to run
 
 Lol as I typed the above it lost connection again to the hotspot ugh.
 
+That's kind of cool you unplug it and the display stays.
+
+crontab should be:
+
+`* * * * * /usr/bin/python /home/pi/e-ink-rpi/code/cron-display.py`
+
 ---
 
 ### 10/22/2026
