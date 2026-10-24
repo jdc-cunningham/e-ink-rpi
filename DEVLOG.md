@@ -62,6 +62,22 @@ This is kind of funny an exception was thrown since I didn't call this function 
 
 <img src="./devlog-images/err.JPG"/>
 
+5:39 PM
+
+Alright this is pretty cool
+
+<img src="./devlog-images/days-left.JPG"/>
+
+So I was going to develop like a desktop app (Electron) and it could have a simulator of this display, then you take whatever image/canvas and turn it into a bitmap send it to this RPi's server and show it... that's all doable and not hard given the rendering part is done already/can reference the example code from waveshare regarding displaying a bitmap.
+
+The thing is I don't plan on customizing this a lot right now. The other problem is the WiFi connection goes down a lot on this maybe from interference with the Pi 4B near it and then proximity to the desktop's hot spot antenna although it's like 2 ft away... idk.
+
+It's not reliable is what I'm saying also the IP keeps changing right now until I connect it to a router, but I can do that project in the future if I want to use this more.
+
+I had envisioned using this to show like my total debt as a clock/daily reminder.
+
+But this is it for now for this project, I'll just add an hourly schedule to run the update via crontab.
+
 ---
 
 ### 10/22/2026
