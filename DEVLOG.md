@@ -86,6 +86,18 @@ crontab should be:
 
 `* * * * * /usr/bin/python /home/pi/e-ink-rpi/code/cron-display.py`
 
+or with logging:
+
+`* * * * * /usr/bin/python /home/pi/e-ink-rpi/code/cron-display.py >> /path/to/file.log 2>&1`
+
+5:50 PM
+
+Ehh of course the paths don't work when ran in cron
+
+6:00 PM
+
+Alright updated it to check path and fix it
+
 ---
 
 ### 10/22/2026
