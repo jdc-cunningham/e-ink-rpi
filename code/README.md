@@ -10,3 +10,5 @@ Some code for doing the following:
 - `$cd code`
 - `$chmod +x install-deps.sh`
 - `$./install-deps.sh`
+
+This project uses the example files from this repo: https://github.com/waveshareteam/e-Paper
