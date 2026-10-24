@@ -98,6 +98,10 @@ Ehh of course the paths don't work when ran in cron
 
 Alright updated it to check path and fix it
 
+6:02 PM
+
+Alright my bad still wrong
+
 ---
 
 ### 10/22/2026
