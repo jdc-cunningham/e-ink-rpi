@@ -50,7 +50,17 @@ Alright I'm going to pick out the library files now for this specific display
 
 Distracted still alright doing it now
 
+5:10 PM
 
+Alright I was able to fix the paths and import only the files being used for this particular e-paper display/demo
+
+Now I have to make my own custom file
+
+5:25 PM
+
+This is kind of funny an exception was thrown since I didn't call this function and it displayed the error or type
+
+<img src="./devlog-images/err.JPG"/>
 
 ---
 
