@@ -7,6 +7,7 @@ import logging
 from datetime import date
 from PIL import Image,ImageDraw,ImageFont
 
+logging.basicConfig(level=logging.DEBUG)
 base_path = str(Path.cwd())
 picdir = base_path + "/e-Paper/pic"
 libdir = base_path + "/e-Paper/lib"
@@ -16,7 +17,11 @@ if os.path.exists(libdir):
 
 from waveshare_epd import epd2in13_V2
 
-logging.basicConfig(level=logging.DEBUG)
+# double-click file to see available sizes in Windows
+font_18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
+font_24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
+font_36 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 36)
+font_72 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 72)
 
 # google AI code
 def get_days_left():
@@ -25,19 +30,25 @@ def get_days_left():
     days_left = move_in_date - today
     return days_left.days
 
-def display_text(epd, x_offset, y_offset, text):
+def clear_screen(epd):
     epd.init(epd.FULL_UPDATE)
     epd.Clear(0xFF)
-    font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
-    image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame    
+
+def write_text(image, epd, x_offset, y_offset, text, font):
     draw = ImageDraw.Draw(image)
-    draw.text((x_offset, y_offset), text, font = font24, fill = 0)
+    draw.text((x_offset, y_offset), text, font = font, fill = 0)
+
+def render_scene(epd):
     epd.display(epd.getbuffer(image))
 
 try:
   epd = epd2in13_V2.EPD()
   days_left = get_days_left()
-  text = f"days to move in: {days_left}"
-  display_text(epd, 10, 10, text)
+  title_text = "days till move in:"
+  clear_screen(epd)
+  image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
+  write_text(image, epd, 10, 10, title_text, font_24)
+  write_text(image, epd, 100, 40, str(days_left), font_72)
+  render_scene(epd)
 except Exception as e:
     print(f"An error occurred: {e}")
