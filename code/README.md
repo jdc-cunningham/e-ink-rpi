@@ -11,3 +11,10 @@ Some code for doing the following:
 - `$./install-deps.sh`
 
 This project uses the example files from this repo: https://github.com/waveshareteam/e-Paper
+
+# Run
+
+You can manually run the code eg. `$python cron-display.py` or add it to cron like this:
+
+- `$crontab -e`
+- `* * * * * /usr/bin/python /home/pi/e-ink-rpi/code/cron-display.py` (every minute)
