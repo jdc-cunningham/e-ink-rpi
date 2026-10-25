@@ -39,7 +39,7 @@ def clear_screen(epd):
     epd.init(epd.FULL_UPDATE)
     epd.Clear(0xFF)
 
-def write_text(image, epd, x_offset, y_offset, text, font):
+def write_text(image, x_offset, y_offset, text, font):
     draw = ImageDraw.Draw(image)
     draw.text((x_offset, y_offset), text, font = font, fill = 0)
 
@@ -52,8 +52,8 @@ try:
   title_text = "days till move in:"
   clear_screen(epd)
   image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
-  write_text(image, epd, 10, 10, title_text, font_24)
-  write_text(image, epd, 100, 40, str(days_left), font_72)
+  write_text(image, 10, 10, title_text, font_24)
+  write_text(image, 100, 40, str(days_left), font_72)
   render_scene(epd)
 except Exception as e:
     print(f"An error occurred: {e}")
