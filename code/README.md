@@ -7,7 +7,6 @@ Some code for doing the following:
 
 # Install deps
 
-- `$cd code`
 - `$chmod +x install-deps.sh`
 - `$./install-deps.sh`
 
