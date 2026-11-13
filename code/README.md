@@ -3,7 +3,11 @@
 Some code for doing the following:
 
 - using CRON to display something at an interval/schedule
-- an API on the Pi Zero W which an Electron desktop app talks to
+- (not implemented) an API on the Pi Zero W which an Electron desktop app talks to
+
+# Enable SPI
+
+- `$sudo raspi-config`
 
 # Install deps
 
